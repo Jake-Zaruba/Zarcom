@@ -1,0 +1,417 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+  background-color: #eee;
+  /* position: relative; */
+  max-width: 140rem;
+}
+
+::selection {
+  background-color: #9c4fa762;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 5rem;
+}
+
+/* ******NAVIGATION****** */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #333; */
+}
+
+.logo-header {
+  height: 5.6rem;
+  width: 16rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  /* LOGO HEIGHT IS 35% OF LOGO WIDTH */
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  padding-right: 11rem;
+  gap: 3rem;
+  margin-right: 4rem;
+}
+
+.main-nav-link {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #333;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  font-weight: 300;
+  color: #333;
+}
+
+.background {
+  background: url(img/background\ final\ final.svg);
+  padding-bottom: 30rem;
+  background-size: 100%;
+  overflow: visible;
+  background-repeat: no-repeat;
+  /* position: relative; */
+  /* top: -45rem; */
+  z-index: -1;
+  /* transform: scale(109%); */
+}
+
+/* ******CAROUSEL SECTION****** */
+
+.section-carousel {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  padding: 6rem 9rem 0rem 9rem;
+  /* margin-bottom: 2rem; */
+}
+
+.carousel-text {
+  align-self: center;
+}
+
+.carousel-container {
+  justify-self: center;
+  align-self: center;
+  width: 40vw;
+  height: 32vw;
+  overflow-y: hidden;
+  overflow-x: auto;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.carousel-items {
+  flex: 0 0 100%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.carousel-btn a {
+  background-color: none;
+  color: #333;
+  border: 0.2rem solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+}
+
+.carousel-btn {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 0.5rem;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  top: 75rem;
+}
+
+/* ******HERO SECTION****** */
+
+.hero-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 7rem;
+  /* margin-top: 10rem; */
+  /* position: absolute;
+  top: 14rem;
+  right: 22%; */
+  /* transform: translate(-11%, 0); */
+}
+
+.hero-text-container {
+  margin-bottom: 5rem;
+}
+
+.hero-title {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 4rem;
+}
+
+.and {
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 4px solid #eee;
+}
+
+.hero-cards {
+  justify-content: center;
+  /* position: absolute;
+
+  top: 40rem;
+  right: 24%; */
+  display: flex;
+  gap: 5rem;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+}
+.hero-card {
+  background-color: #eee;
+  color: white;
+  box-shadow: -10px 5px 10px 2px rgba(92, 169, 204, 0.278);
+  font-size: 2rem;
+  text-align: center;
+  /* opacity: 70%; */
+  border-radius: 3rem;
+  overflow: hidden;
+  height: 15rem;
+  width: 15rem;
+  transition: all 0.3s;
+}
+
+.hero-card:hover {
+  transform: scale(110%);
+  box-shadow: -10px 10px 18px 5px rgba(92, 169, 204, 0.232);
+}
+
+.card-one {
+  /* grid-column: 1;
+  grid-row: 1; */
+}
+
+.card-two {
+  /* grid-column: 2;
+  grid-row: 1; */
+}
+
+.card-three {
+  /* grid-column: 1;
+  grid-row: 2; */
+}
+
+.card-four {
+  /* grid-column: 2;
+  grid-row: 2; */
+}
+
+.hero-icon {
+  margin-top: 2.4rem;
+  margin-bottom: 0.6rem;
+  height: 5rem;
+  width: 5rem;
+  stroke: #333;
+}
+
+.card-title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.btn-container {
+}
+
+.btn-main,
+.btn-main:visited,
+.btn-main:link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1rem 1rem 1rem 1rem;
+  font-weight: 300;
+  border-radius: 9px;
+  border: none;
+  /* box-shadow: 2px 3px 8px #333; */
+  /* border: 0.2rem solid #333; */
+  cursor: pointer;
+  font-family: inherit;
+  height: 6rem;
+  width: 16rem;
+  transition: all 0.3s;
+
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.btn-contact {
+  justify-self: center;
+  align-self: flex-end;
+  background-color: #71be5e;
+  color: white;
+}
+
+.btn-computers {
+  justify-self: flex-start;
+  align-self: flex-end;
+  /* background-color: #71be5e31; */
+}
+
+.btn-surveillance {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+/* ******HOME SECURITY****** */
+
+.section-home-security {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22rem;
+  position: relative;
+}
+
+.home-security-text {
+  width: 35%;
+  height: auto;
+  margin-left: 4rem;
+}
+
+.home-security-title {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.home-security-image-box {
+  justify-self: center;
+  align-self: center;
+  width: 40vw;
+  height: 32vw;
+  overflow-y: hidden;
+  overflow-x: auto;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.home-security-paragraph {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.home-security-image {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.home-carousel-btn a {
+  background-color: none;
+  color: #333;
+  border: 0.2rem solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home-carousel-btn {
+  margin-top: 0.5rem;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  top: 47rem;
+  right: 31rem;
+}
+
+/* ******BUSINESS SURVEILLANCE****** */
+
+.section-business-surveillance {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22rem;
+  position: relative;
+}
+
+.business-surveillance-text {
+  width: 35%;
+  height: auto;
+  /* margin-left: 4rem; */
+}
+
+.business-surveillance-title {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.business-surveillance-image-box {
+  justify-self: center;
+  align-self: center;
+  width: 40vw;
+  height: 32vw;
+  overflow-y: hidden;
+  overflow-x: auto;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.business-surveillance-paragraph {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.business-surveillance-image {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.business-carousel-btn a {
+  background-color: none;
+  color: #333;
+  border: 0.2rem solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.business-carousel-btn {
+  margin-top: 0.5rem;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  top: 47rem;
+  left: 33rem;
+}
