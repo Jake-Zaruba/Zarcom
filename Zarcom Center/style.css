@@ -551,8 +551,8 @@ a {
 
 
 .fade-in-left {
-  width: 40rem;
-  height: 22rem;
+  width: 100%;
+  height: auto;
   background-position: center;
   background-size: cover;
   background-image: url(img/custom-pc-build-1.png);
@@ -604,8 +604,8 @@ a {
   }
 
 .fade-in-bottom {
-  width: 40rem;
-  height: 22rem;
+  width: 100%;
+  height: auto;
   background-position: center;
   background-size: cover;
   background-image: url(img/custom-pc-build-2.png);
