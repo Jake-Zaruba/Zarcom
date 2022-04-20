@@ -20,15 +20,3 @@ buttons.forEach((button) => {
 });
 
 //FADE IN EFFECT//
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      document.querySelectorAll(`.animated`)[0].classList.add(`fade-in-left`);
-      document.querySelectorAll(`.animated`)[1].classList.add(`fade-in-bottom`);
-      document.querySelectorAll(`.animated`)[2].classList.add(`fade-in-right`);
-    }
-  });
-});
-
-observer.observe(document.querySelector(`.custom-builds-images`));

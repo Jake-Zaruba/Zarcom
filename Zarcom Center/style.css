@@ -17,7 +17,7 @@ body {
   background-color: #eee;
   /* position: relative; */
   max-width: 140rem;
-  margin: 0;
+  margin: auto;
 }
 
 ::selection {
@@ -402,6 +402,11 @@ a {
   margin-bottom: 4rem;
 }
 
+.business-surveillance-paragraph {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
 .business-surveillance-image-box {
   justify-self: center;
   align-self: center;
@@ -416,10 +421,6 @@ a {
   /* position: relative; */
 }
 
-.business-surveillance-paragraph {
-  font-size: 1.8rem;
-  line-height: 1.2;
-}
 
 .business-surveillance-image {
   flex: 0 0 100%;
@@ -535,176 +536,115 @@ a {
 
 /* ******CUSTOM BUILDS****** */
 
-.section-custom-builds {
+.container-custom-builds {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 30vh;
   overflow: hidden;
+  margin-bottom: 16rem;
 }
+
+.custom-builds-text {
+  margin: auto;
+  display: block;
+  width: 35%;
+  height: auto;
+  
+}
+
+.custom-builds-title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.custom-builds-paragraph {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 8rem;
+}
+
 
 .custom-builds-images {
+  /* margin-top: 20rem; */
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+justify-content: center;
+align-items: center;
+  gap: 3rem;
 }
 
 
-.fade-in-left {
-  width: 100%;
-  height: auto;
-  background-position: center;
-  background-size: cover;
-  background-image: url(img/custom-pc-build-1.png);
-  -webkit-animation: fade-in-left 1.2s both;
-  -moz-animation: fade-in-left 1.2s both;
-  -o-animation: fade-in-left 1.2s both;
-  animation: fade-in-left 1.2s both;
+.animated:nth-child(1) {
+  width: 20%;
+  height: 20%;
 }
 
-@-webkit-keyframes fade-in-left {
-  0%{opacity: 0;
-  -webkit-transform: translateX(-5rem);
-  }
-  100%{
-    opacity: 1;
-    -webkit-transform: translateX(0);
-  }
+.animated:nth-child(2) {
+  width: 23%;
+  height: 23%;
 }
 
-@-moz-keyframes fade-in-left {
-  0%{opacity: 0;
-    -moz-transform: translateX(-5rem);
-    }
-    100%{
-      opacity: 1;
-      -moz-transform: translateX(0);
-    }
-  }
+.animated:nth-child(3) {
+  width: 25%;
+  height: 25%;
+}
 
-@-o-keyframes fade-in-left {
-  0%{opacity: 0;
-    -o-transform: translateX(-5rem);
-    }
-    100%{
-      opacity: 1;
-      -o-transform: translateX(0);
-    }
-  }
+/* ******CYBER SECURITY****** */
 
+.section-cyber-security {
+  max-width: 140rem;
+  display: block;
+  justify-content:center;
+  align-items: center;
+  margin-bottom: 22rem;
+  padding-bottom: 4rem;
+  position: relative;
+  background-color: rgba(155, 219, 249, 0.31);
+}
 
-@keyframes fade-in-left {
-  0%{opacity: 0;
-    transform: translateX(-5rem);
-    }
-    100%{
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-.fade-in-bottom {
-  width: 100%;
-  height: auto;
-  background-position: center;
-  background-size: cover;
-  background-image: url(img/custom-pc-build-2.png);
-  -webkit-animation: fade-in-bottom 1.2s both;
-  -moz-animation: fade-in-bottom 1.2s both;
-  -o-animation: fade-in-bottom 1.2s both;
-   animation: fade-in-bottom 1.2s both;
- }
-
- @-webkit-keyframes fade-in-bottom {
-   0%{opacity: 0;
-     -webkit-transform: translateY(5rem);
-     }
-     100%{
-       opacity: 1;
-       -webkit-transform: translateY(0);
-     }
-   }
-
- @-moz-keyframes fade-in-bottom {
-   0%{opacity: 0;
-     -moz-transform: translateY(5rem);
-     }
-     100%{
-       opacity: 1;
-       -moz-transform: translateY(0);
-     }
-   }
- @-o-keyframes fade-in-bottom {
-   0%{opacity: 0;
-     -o-transform: translateY(5rem);
-     }
-     100%{
-       opacity: 1;
-       -o-transform: translateY(0);
-     }
-   }
+.cyber-security-heading{
+  background-color: rgba(155, 219, 249, 0.31);
+  margin: 0;
+  padding: 2rem 0 8rem 0;
   
+}
 
-@keyframes fade-in-bottom {
-   0%{opacity: 0;
-     transform: translateY(5rem);
-     }
-     100%{
-       opacity: 1;
-       transform: translateY(0);
-     }
-   }
+.cyber-security-text {
+  width: 70%;
+  margin: auto;
+  height: auto;
+  display: block;
+  height: auto;
+}
 
-.fade-in-right {
-  width: 40rem;
-  height: 22rem;
-  background-position: center;
-  background-size: cover;
-  background-image: url(img/custom-pc-build-3.png);
-  -webkit-animation: fade-in-right 1.2s both;
-  -moz-animation: fade-in-right 1.2s both;
-  -o-animation: fade-in-right 1.2s both;
-   animation: fade-in-right 1.2s both;
- }
+.cyber-security-title {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
 
- @-webkit-keyframes fade-in-right {
-   0%{opacity: 0;
-     -webkit-transform: translateX(5rem);
-     }
-     100%{
-       opacity: 1;
-       -webkit-transform: translateX(0);
-     }
-   }
+.cyber-security-paragraph {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 4rem;
+}
 
- @-moz-keyframes fade-in-right {
-   0%{opacity: 0;
-     -moz-transform: translateX(5rem);
-     }
-     100%{
-       opacity: 1;
-       -moz-transform: translateX(0);
-     }
-   }
- @-o-keyframes fade-in-right {
-   0%{opacity: 0;
-     -o-transform: translateX(5rem);
-     }
-     100%{
-       opacity: 1;
-       -o-transform: translateX(0);
-     }
-   }
-  
+.cyber-security-icon-container {
+  margin: auto;
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+}
 
-@keyframes fade-in-right {
-   0%{opacity: 0;
-     transform: translateX(5rem);
-     }
-     100%{
-       opacity: 1;
-       transform: translateX(0);
-     }
-   }
+.cyber-security-icons {
+  height: 5rem;
+  width: 5rem;
+  /* stroke: rgb(93, 199, 248); */
+}
 
-
+.credit-card-icon {
+  margin-top: 0.4rem;
+}
