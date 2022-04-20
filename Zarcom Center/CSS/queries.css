@@ -89,15 +89,20 @@
   }
 
   .background {
-    padding-bottom: 75rem;
+    padding-bottom: 15rem;
     background-size: 100%;
     overflow: visible;
     background-repeat: no-repeat;
     position: relative;
-
-    /* top: 0rem; */
-    z-index: -1;
+    z-index: 1;
     transform: scale(100%);
+  }
+
+  .custom-builds-text {
+    margin: auto;
+    display: block;
+    width: 75%;
+    height: auto;
   }
 }
 
@@ -107,14 +112,19 @@
   }
 
   .background {
-    background: url(/img/background-mobile.svg);
-    /* padding-bottom: 75rem; */
+    background: url(/img/background-mobile-2.svg);
+    padding-bottom: 20rem;
     background-size: 100%;
     overflow: visible;
     background-repeat: no-repeat;
+    z-index: 1;
     /* position: absolute;
     top: 0;
     left: 0; */
+  }
+
+  a {
+    z-index: 100;
   }
 
   .main-nav {
@@ -205,4 +215,109 @@
   .Y {
     text-transform: lowercase;
   }
-}
+
+  .section-home-security {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+  }
+
+  .home-security-text {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+
+  .home-security-title {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .home-security-paragraph {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .home-security-image-box {
+    margin: 0 auto;
+    width: 75vw;
+    overflow-y: hidden;
+    overflow-x: auto;
+    border-radius: 2rem;
+  }
+
+  .home-security-image {
+    object-fit: cover;
+    display: inline-flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-business-surveillance {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+  }
+
+  .business-surveillance-text {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+
+  .business-surveillance-title {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .business-surveillance-paragraph {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .business-surveillance-image-box {
+    margin: 0 auto;
+    width: 75vw;
+    height: 40vh;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+    /* position: relative; */
+  }
+
+  .business-surveillance-image {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    position: relative;
+  }
+
+  .carousel {
+    justify-self: center;
+    align-self: center;
+    width: 75vw;
+    height: 40vh;
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+  }
+
+  .container-custom-builds {
+    margin-bottom: 8rem;
+  }
+
+  .custom-builds-images {
+    gap: 1rem;
+  }
