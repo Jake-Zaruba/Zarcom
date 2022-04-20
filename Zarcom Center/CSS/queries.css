@@ -315,9 +315,67 @@
   }
 
   .container-custom-builds {
+    height: 50vh;
     margin-bottom: 8rem;
+    /* flex-direction: column; */
   }
 
   .custom-builds-images {
     gap: 1rem;
   }
+
+  .animated:nth-child(1) {
+    width: 25%;
+    height: 25%;
+    padding-bottom: 40rem;
+  }
+
+  .animated:nth-child(2) {
+    width: 33%;
+    height: 33%;
+  }
+
+  .animated:nth-child(3) {
+    width: 30%;
+    height: 30%;
+    padding-top: 40rem;
+  }
+
+  .cyber-security-icon-container {
+    column-gap: 2.8rem;
+  }
+
+  .section-contact {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 14rem;
+  }
+
+  .contact-text-box {
+    padding: 4rem;
+  }
+
+  .contact-form {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  input {
+    margin-bottom: 2rem;
+  }
+
+  .btn-contact {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .footer-container {
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-around;
+    border-top: 0.3rem solid rgba(93, 199, 248, 0.457);
+    padding: 0.8rem 4rem 2rem 4rem;
+  }
+}
