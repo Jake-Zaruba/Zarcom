@@ -27,8 +27,7 @@ yearElement.textContent = currentYear;
 
 //SMOOTH SCROLL//
 
-const siteLinks = document.querySelectorAll(`a:link`);
-
+const siteLinks = document.querySelectorAll(`.link`);
 siteLinks.forEach(function (link) {
   link.addEventListener(`click`, function (e) {
     e.preventDefault();
