@@ -43,3 +43,11 @@ siteLinks.forEach(function (link) {
     }
   });
 });
+
+const category = document.getElementById("category-selector").value;
+const computerRepair = document.getElementById("computer-service");
+const securityCamera = document.getElementById("security-camera");
+
+function getCategory() {
+  console.log(category);
+}

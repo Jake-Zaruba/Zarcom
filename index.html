@@ -263,9 +263,9 @@
       <div class="container-contact">
         <div class="contact">
           <div class="contact-text-box">
-            <h2 class="contact-title">Reach out!</h2>
+            <h2 class="contact-title">How can we help?</h2>
             <p class="contact-text">
-                If you have a business or home in need of a security system, computer repair, custom PC, or all of the above - send us a message! We'd love to schedule an appointment to secure your property and data today.
+                Complete the form below to let us know how we can help you.
            </p>
             <form class="contact-form" name="sign-up">
                <div>
@@ -287,6 +287,33 @@
                   name="email"
                   required
                   />
+                </div>
+                <div>
+                  <label for="category">Category</label>
+                  <select id="category-selector" name="category" onchange="getCategory()" >
+                    <option value="" selected disabled>Choose one...</option>
+                    <option value="computer-service">Computer Service</option>
+                    <option value="security-camera">Security Camera Installation</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-category" id="computer-service" >
+                  <label for="computer-categories">Issue</label>
+                  <select name="computer-categories">
+                    <option value="" selected disabled>Choose one...</option>
+                    <option>Virus</option>
+                    <option>Performance</option>
+                    <option>Screen</option>
+                  </select>
+                </div>
+                <div class="form-category" id="security-camera" >
+                  <label for="camera-categories">Issue</label>
+                  <select name="camera-categories">
+                    <option value="" selected disabled>Choose one...</option>
+                    <option>Business</option>
+                    <option>Home</option>
+                    <option>Other</option>
+                  </select>
                 </div>
                 <button class="btn btn-contact">Submit</button>
               </form>
