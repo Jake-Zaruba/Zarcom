@@ -117,7 +117,7 @@ body {
   height: 100vh;
   margin: 0 auto;
   background: url(img/rainbow-vortex-background.svg);
-  padding-bottom: 20rem;
+  /* padding-bottom: 20rem; */
   background-size: 100%;
   overflow: visible;
   background-repeat: no-repeat;
@@ -163,6 +163,7 @@ body {
   text-align: center;
   line-height: 1.6;
   font-size: 4rem;
+  margin-bottom: 10rem;
 }
 
 .and {
@@ -289,6 +290,10 @@ a {
   align-items: center;
   margin-bottom: 14rem;
   position: relative;
+}
+
+#home-security {
+  margin-top: 8rem;
 }
 
 .home-security-text {
@@ -745,6 +750,10 @@ a {
   row-gap: 2.4rem;
 }
 
+.description {
+  grid-column: 1 / span 2;
+}
+
 .contact-form label {
   display: block;
   font-size: 1.8rem;
@@ -767,6 +776,10 @@ a {
 
 .contact-form input::placeholder {
   color: #aaa;
+}
+
+.contact-form label {
+  font-size: 1.6rem;
 }
 
 textarea {

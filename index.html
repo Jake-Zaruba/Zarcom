@@ -273,7 +273,7 @@
                 <input
                     id="full-name"
                     type="text"
-                    placeholder="First Last"
+                    placeholder="John Smith"
                     name="full-name"
                     required
                  />
@@ -283,21 +283,31 @@
                  <input
                   id="email"
                    type="email"
-                   placeholder="email@example.com"
+                   placeholder="name@email.com"
                   name="email"
                   required
                   />
                 </div>
                 <div>
+                  <label for="phone">Phone number</label>
+                  <input
+                   id="phone"
+                    type="tel"
+                    placeholder="(555)-555-5555"
+                   name="phone"
+                   required
+                   />
+                 </div>
+                <div>
                   <label for="category">Category</label>
-                  <select id="category-selector" name="category" onchange="getCategory()" >
+                  <select id="category-selector" name="category" >
                     <option value="" selected disabled>Choose one...</option>
                     <option value="computer-service">Computer Service</option>
                     <option value="security-camera">Security Camera Installation</option>
                     <option value="other">Other</option>
                   </select>
                 </div>           
-                <div>
+                <div class="description" >
                   <label for="text-box">Description</label>
                   <textarea name="text-box"></textarea>
                 </div>   
